@@ -814,7 +814,7 @@
             <div class="wave wave4"></div>
         </section>
 
-        <section style="padding: 100px 0px;" class="">
+        <section style="padding: 50px 0px;" class="">
             <div>
             <div class="event_container">
                 
@@ -831,7 +831,7 @@
                     <span class="month-year"></span>
                     <div style="cursor: pointer;" class="next-btn"><i class="fa-solid fa-chevron-right"></i></div>
                     </div>
-                    <div class="days-of-week" style="display: flex; justify-content: space-around; padding: 10px; font-weight: bold;">
+                    <div class="days-of-week" style="display: flex; justify-content: space-around; padding: 10px 0px; font-weight: bold;">
                     <span class="day-of-week">Sun</span>
                     <span class="day-of-week">Mon</span>
                     <span class="day-of-week">Tue</span>
@@ -840,7 +840,7 @@
                     <span class="day-of-week">Fri</span>
                     <span class="day-of-week">Sat</span>
                     </div>
-                    <div class="days" style="padding: 10px 0px;"></div>
+                    <div class="days" style="padding: 15px 0px; font-weight: bold;"></div>
                     </div>
                     <div class="event-box" style="padding: 20px;">
                         <h5>Events for <span class="selected-date"></span></h3>
@@ -852,16 +852,32 @@
         </div>
         </section>
 
+
+        <!-- Search Section -->
+        <h2 style="text-align: center; margin: 40px 0px; font-weight: bold;"><span style="border-bottom: 4px solid #fecd13;">OUR E</span>VENTS</h3>
+        <div class="search_event">
+            
+            <input
+            type="text"
+            id="eventFilter"
+            onkeyup="eventFilterFunction()"
+            placeholder="Search by event name.."
+            title="Type in a name"
+            />
+        </div>
+
+
+
+
         <section class="event">
-            <div class="event-container">
-                <h1>Previous Events</h1>  
+            <div class="event-container"> 
                 <!-- hello  -->
                 <!-- <div class="event_search">
                     <label>Search: </label>
                     <input type="text" onkeyup="searchfunction()" id="search" placeholder="Search with event title">
                 </div> -->
-                <div class="box-container event_box">
-                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box">
+                <div class="box-container" style="transition: .3s ease-in-out;">
+                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box event_box">
                         <article id="post-2255"
                             class="post-2255 post type-post status-publish format-standard has-post-thumbnail hentry category-post-slider tag-blog tag-life-style">
                             <div class="gdlr-standard-style">
@@ -886,8 +902,7 @@
                                             <div class="clear"></div>
                                         </div>
 
-                                        <h3 class="gdlr-blog-title"><a href="#">Sem
-                                                Porta Mollis Parturi</a></h3>
+                                        <h3 class="gdlr-blog-title event_name"><a href="#">Event 1</a></h3>
                                         <div class="clear"></div>
                                     </header>
                                     <!-- entry-header -->
@@ -901,7 +916,7 @@
                             </div>
                         </article>
                     </div>
-                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box">
+                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box event_box">
                         <article id="post-2255"
                             class="post-2255 post type-post status-publish format-standard has-post-thumbnail hentry category-post-slider tag-blog tag-life-style">
                             <div class="gdlr-standard-style">
@@ -926,8 +941,7 @@
                                             <div class="clear"></div>
                                         </div>
 
-                                        <h3 class="gdlr-blog-title"><a href="#">Sem
-                                                Porta Mollis Parturi</a></h3>
+                                        <h3 class="gdlr-blog-title event_name"><a href="#">Event 2</a></h3>
                                         <div class="clear"></div>
                                     </header>
                                     <!-- entry-header -->
@@ -944,7 +958,7 @@
                             </div>
                         </article>
                     </div>
-                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box">
+                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box event_box">
                         <article id="post-2255"
                             class="post-2255 post type-post status-publish format-standard has-post-thumbnail hentry category-post-slider tag-blog tag-life-style">
                             <div class="gdlr-standard-style">
@@ -969,8 +983,7 @@
                                             <div class="clear"></div>
                                         </div>
 
-                                        <h3 class="gdlr-blog-title"><a href="#">Sem
-                                                Porta Mollis Parturi</a></h3>
+                                        <h3 class="gdlr-blog-title event_name"><a href="#">Event 3</a></h3>
                                         <div class="clear"></div>
                                     </header>
                                     <!-- entry-header -->
@@ -987,7 +1000,7 @@
                             </div>
                         </article>
                     </div>
-                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box">
+                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box event_box">
                         <article id="post-2255"
                             class="post-2255 post type-post status-publish format-standard has-post-thumbnail hentry category-post-slider tag-blog tag-life-style">
                             <div class="gdlr-standard-style">
@@ -1012,8 +1025,7 @@
                                             <div class="clear"></div>
                                         </div>
 
-                                        <h3 class="gdlr-blog-title"><a href="#">Sem
-                                                Porta Mollis Parturi</a></h3>
+                                        <h3 class="gdlr-blog-title event_name"><a href="#">Event 8</a></h3>
                                         <div class="clear"></div>
                                     </header>
                                     <!-- entry-header -->
@@ -1030,7 +1042,7 @@
                             </div>
                         </article>
                     </div>
-                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box">
+                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box event_box">
                         <article id="post-2255"
                             class="post-2255 post type-post status-publish format-standard has-post-thumbnail hentry category-post-slider tag-blog tag-life-style">
                             <div class="gdlr-standard-style">
@@ -1055,8 +1067,7 @@
                                             <div class="clear"></div>
                                         </div>
 
-                                        <h3 class="gdlr-blog-title"><a href="#">Sem
-                                                Porta Mollis Parturi</a></h3>
+                                        <h3 class="gdlr-blog-title event_name"><a href="#">Sample Event</a></h3>
                                         <div class="clear"></div>
                                     </header>
                                     <!-- entry-header -->
@@ -1073,7 +1084,7 @@
                             </div>
                         </article>
                     </div>
-                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box">
+                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box event_box">
                         <article id="post-2255"
                             class="post-2255 post type-post status-publish format-standard has-post-thumbnail hentry category-post-slider tag-blog tag-life-style">
                             <div class="gdlr-standard-style">
@@ -1098,8 +1109,7 @@
                                             <div class="clear"></div>
                                         </div>
 
-                                        <h3 class="gdlr-blog-title"><a href="#">Sem
-                                                Porta Mollis Parturi</a></h3>
+                                        <h3 class="gdlr-blog-title event_name"><a href="#">IEEE Spac 2022</a></h3>
                                         <div class="clear"></div>
                                     </header>
                                     <!-- entry-header -->
@@ -1116,7 +1126,7 @@
                             </div>
                         </article>
                     </div>
-                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box">
+                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box event_box">
                         <article id="post-2255"
                             class="post-2255 post type-post status-publish format-standard has-post-thumbnail hentry category-post-slider tag-blog tag-life-style">
                             <div class="gdlr-standard-style">
@@ -1141,8 +1151,7 @@
                                             <div class="clear"></div>
                                         </div>
 
-                                        <h3 class="gdlr-blog-title"><a href="#">Sem
-                                                Porta Mollis Parturi</a></h3>
+                                        <h3 class="gdlr-blog-title event_name"><a href="#">Event 5</a></h3>
                                         <div class="clear"></div>
                                     </header>
                                     <!-- entry-header -->
@@ -1159,7 +1168,7 @@
                             </div>
                         </article>
                     </div>
-                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box">
+                    <div style="border-radius: 7px;" class="gdlr-item gdlr-blog-grid gdlr-skin-box event_box">
                         <article id="post-2255"
                             class="post-2255 post type-post status-publish format-standard has-post-thumbnail hentry category-post-slider tag-blog tag-life-style">
                             <div class="gdlr-standard-style">
@@ -1184,7 +1193,7 @@
                                             <div class="clear"></div>
                                         </div>
 
-                                        <h3 class="gdlr-blog-title"><a href="#">Sem
+                                        <h3 class="gdlr-blog-title event_name"><a href="#">Sem
                                                 Porta Mollis Parturi</a></h3>
                                         <div class="clear"></div>
                                     </header>
@@ -1204,7 +1213,8 @@
                     </div>
 
                 </div>
-                <div class="load-more">Load More</div>
+            <div class="load-more">Load More</div>
+                
             </div>
         </section>
 

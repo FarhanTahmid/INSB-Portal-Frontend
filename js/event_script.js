@@ -1,7 +1,8 @@
 // Dummy events data for demonstration
 const eventsData = {
     '2023-07-27': ['Event 1', 'Event 2'],
-    '2023-07-26': ['Event 3'],
+    '2023-07-23': ['Event 3'],
+    '2023-07-15': ['Spac event'],
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -100,3 +101,24 @@ document.addEventListener('DOMContentLoaded', () => {
         renderCalendar(currentDate);
     });
 });
+
+
+function eventFilterFunction() {
+    var input, filter, box, eventName, i, txtValue;
+    input = document.getElementById("eventFilter");
+    filter = input.value.toUpperCase();
+    box = document.getElementsByClassName("event_box");
+    for (i = 0; i < box.length; i++) {
+        eventName = box[i].getElementsByClassName("event_name")[0];
+        if (eventName) {
+            txtValue = eventName.textContent || eventName.innerText;
+            console.log('Name: ', txtValue)
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+
+                box[i].style.display = "block";
+            } else {
+                box[i].style.display = "none";
+            }
+        }
+    }
+}
