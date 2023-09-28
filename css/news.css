@@ -225,6 +225,38 @@
 }
 
 
+
+.content {
+  display: none;
+}
+
+
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 766px){
   .newsCardTotal{
     width: 95%;
