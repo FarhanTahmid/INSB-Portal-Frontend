@@ -140,7 +140,7 @@
 }
 
 .news-card .description .read-more a {
-  color: #00629B;
+  color: #00B5E2;
   display: inline-block;
   position: relative;
   font-weight: bold;
@@ -173,7 +173,7 @@
   content: "";
   position: absolute;
   height: 5px;
-  background: #5ad67d;
+  background:	#FFC72C;
   width: 35px;
   top: -0.75rem;
   border-radius: 3px;
