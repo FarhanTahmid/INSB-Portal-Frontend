@@ -224,8 +224,6 @@
   }
 }
 
-
-
 .content {
   display: none;
 }
@@ -236,25 +234,6 @@
   background-color: transparent !important;
   pointer-events: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 766px){
