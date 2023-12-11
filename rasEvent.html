@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>News - IEEE NSU SB</title>
+    <title>RAS | Event- IEEE NSU SB</title>
 
     <link rel="icon" href="upload/logo.gif"/>
     <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
@@ -20,113 +20,173 @@
     <link rel='stylesheet' href='css/style-custom.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/event.css' type='text/css' media='all' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/Rass.css">
 
 
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:300|Lato:regular|Crete+Round:regular" rel="stylesheet"
         property="stylesheet" type="text/css" media="all">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
 
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        .wavy {
-            position: relative;
-            width: 100%;
-            background-color: transparent;
-            background-image: linear-gradient(180deg, #02082b 0%, #519fff 96%);
-            overflow: hidden;
-        }
+body {
+      margin: 0;
+      padding: 0;
+      background-color: #FFFFFF;
+    }
 
-        .wavy .wave {
-            position: absolute;
-            top: 75%;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url(upload/wave.png);
-            background-size: 1000px 100px;
-            background-repeat-y: no-repeat;
-        }
+    #container {
+      display: flex;
+    }
 
-        .wavy .wave.wave1 {
-            animation: animate 30s linear infinite;
-            z-index: 10;
-            opacity: 1;
-            animation-delay: 0s;
-            bottom: 0;
-        }
+    #articles {
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 50px;
+     
+      
+    }
 
-        .wavy .wave.wave2 {
-            animation: animate2 15s linear infinite;
-            z-index: 9;
-            opacity: 0.5;
-            animation-delay: -5s;
-            bottom: 10px;
-        }
+    .article {
+      
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #ffff;
+      
+    }
 
-        .wavy .wave.wave3 {
-            animation: animate 30s linear infinite;
-            z-index: 8;
-            opacity: 0.2;
-            animation-delay: -2s;
-            bottom: 15;
-        }
+    .thumbnail {
+      margin-right: 20px;
+    }
 
-        .wavy .wave.wave4 {
-            animation: animate2 15s linear infinite;
-            z-index: 7;
-            opacity: 0.7;
-            animation-delay: -5s;
-            bottom: 20px;
-        }
+    .thumbnail img {
+      width: 130px;
+      height: 130px;
+      border-radius: 8px;
+      box-shadow: #000;
+    }
 
-        .wavy .title {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            padding: 70px 0 146px;
-            line-height: 0;
-        }
+    .article-content {
+      display: flex;
+      max-width: 690px;
+      margin: 0;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+    }
 
-        .wavy .title h2 {
-            font-family: "Poppins", Sans-serif;
-            color: #fff;
-            font-size: 45px;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
+    .article h2 {
+      margin-top: 0;
+      font-size: x-large;
+      font-weight: 1000;
+      font-weight: bold;
+    }
+    .article h6 {
+        font-weight: bold;
+        font-size: medium;
+      color: #626262;
+    }
 
-        .wavy .title p {
-            font-family: "Poppins", Sans-serif;
-            color: #fff;
-            font-size: 100%;
-        }
+    
 
-        @keyframes animate {
-            0% {
-                background-position-x: 0;
-            }
+    .line {
+      max-width:800px;
+      height: 1px;
+      background-color: #ccc;
+      margin: 10px 0;
+    }
 
-            100% {
-                background-position-x: 1000px;
-            }
-        }
+    a {
+      color: black;
+      text-decoration: underline;
+      font-weight: 600;
+    }
 
-        @keyframes animate2 {
-            0% {
-                background-position-x: 0;
-            }
+    
+    a:hover {
+      color: #637AAD;
+    }
+         
 
-            100% {
-                background-position-x: -1000px;
-            }
-        }
-          
-    </style>
+.upnext {
+}
+
+.event_calender {
+    /* background-color: burlywood; */
+}
+
+/* Calender css */
+
+.calendar {
+    max-width: 100%;
+    margin-bottom: 100px;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    overflow: hidden;
+    margin-right: 50px;
+    /* margin-top: 50px; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    
+}
+
+.month-year {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 30px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    background-color: #f0f0f0;
+    padding: 5px 0;
+}
+
+.day-name {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    text-align: center;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.1s;
+    font-size: 14px;
+    color: #333;
+}
+
+.day:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+          </style>
 
 </head>
 
@@ -279,208 +339,103 @@
                 </div>
             </div>
         </header>
-         <!-- slider menu  -->
-                        
-       
+        
+        <div id="container">
+            <div id="articles">
+                <div class="article">
+                  <div class="thumbnail">
+                    <a href="https://ieeensusb.org/events/workshop-on-basic-home-automation/" class="thumbnail-link no-lightbox">
+                      <img width="150" height="150" src="https://ieeensusb.org/events/basic-automation-workshop-on-home-security/" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Workshop on Basic Home Automation" itemprop="image" decoding="async" srcset="https://ieeensusb.org/wp-content/uploads/2023/12/320800531_755761816223664_6042348633299026208_n-150x150.jpg 150w, https://ieeensusb.org/wp-content/uploads/2023/12/320800531_755761816223664_6042348633299026208_n-300x300.jpg 300w, https://ieeensusb.org/wp-content/uploads/2023/12/320800531_755761816223664_6042348633299026208_n-600x600.jpg 600w" sizes="(max-width: 150px) 100vw, 150px">
+                    </a>
+                  </div>
+                  <div class="article-content">
+                    <h2>Workshop on Basic Home Automation</h2>
+                    <!-- Rest of the content -->
+                    <h6>Ever wondered how much it takes to automate anything? Over the years, IEEE North South University Robotics and Automation Society Student Branch Chapter has continually focused on enlightening students, aimed…</h6>
+                    <a href="https://ieeensusb.org/events/workshop-on-basic-home-automation/" title="Continue Reading">Continue Reading</a>
+                  </div>
+                </div>
+                    <div class="line"></div>
 
-        <!-- slider menu ends  -->
-        <section class="wavy">
-            <div class="title">
-                <h2>News</h2>
-                <p style="letter-spacing: 1px;" class="mt-2">This page represents some of the achievements of INSB</p>
+                <div class="article">
+                  <div class="thumbnail">
+                    <a href="https://ieeensusb.org/events/basic-automation-workshop-on-home-security/" class="thumbnail-link no-lightbox">
+                      <img width="150" height="150" src="https://ieeensusb.org/wp-content/uploads/2023/12/375587788_643831741176123_6289590986046757949_n-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Basic Automation Workshop On Home Security" itemprop="image" decoding="async" srcset="https://ieeensusb.org/wp-content/uploads/2023/12/375587788_643831741176123_6289590986046757949_n-150x150.jpg 150w, https://ieeensusb.org/wp-content/uploads/2023/12/375587788_643831741176123_6289590986046757949_n-300x300.jpg 300w, https://ieeensusb.org/wp-content/uploads/2023/12/375587788_643831741176123_6289590986046757949_n-600x600.jpg 600w" sizes="(max-width: 150px) 100vw, 150px">
+                    </a>
+                  </div>
+                  <div class="article-content">
+                    <h2>Basic Automation Workshop On Home Security</h2>
+                    <!-- Rest of the content -->
+                    <h6>A home security system is a collection of tangible electrical components that cooperate to safeguard a house. This home security system, used to protect against theft and break-ins, frequently consists…</h6>
+                    <a href="https://ieeensusb.org/events/workshop-on-basic-home-automation/" title="Continue Reading">Continue Reading</a>
+                  </div>
+                </div>
+                    <div class="line"></div>
+
+                <div class="article">
+                    <div class="thumbnail">
+                      <a href="https://ieeensusb.org/events/workshop-on-basic-home-automation/" class="thumbnail-link no-lightbox">
+                        <img width="150" height="150" src="https://ieeensusb.org/events/basic-automation-workshop-on-home-security/" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Workshop on Basic Home Automation" itemprop="image" decoding="async" srcset="https://ieeensusb.org/wp-content/uploads/2023/12/320800531_755761816223664_6042348633299026208_n-150x150.jpg 150w, https://ieeensusb.org/wp-content/uploads/2023/12/320800531_755761816223664_6042348633299026208_n-300x300.jpg 300w, https://ieeensusb.org/wp-content/uploads/2023/12/320800531_755761816223664_6042348633299026208_n-600x600.jpg 600w" sizes="(max-width: 150px) 100vw, 150px">
+                      </a>
+                    </div>
+                    <div class="article-content">
+                      <h2>Workshop on Basic Home Automation</h2>
+                      <!-- Rest of the content -->
+                      <h6>Ever wondered how much it takes to automate anything? Over the years, IEEE North South University Robotics and Automation Society Student Branch Chapter has continually focused on enlightening students, aimed…</h6>
+                      <a href="https://ieeensusb.org/events/workshop-on-basic-home-automation/" title="Continue Reading">Continue Reading</a>
+                    </div>
+                  </div>
+                    <div class="line"></div>
+                    
+                <div class="article">
+                    <div class="thumbnail">
+                      <a href="https://ieeensusb.org/events/basic-automation-workshop-on-home-security/" class="thumbnail-link no-lightbox">
+                        <img width="150" height="150" src="https://ieeensusb.org/wp-content/uploads/2023/12/375587788_643831741176123_6289590986046757949_n-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Basic Automation Workshop On Home Security" itemprop="image" decoding="async" srcset="https://ieeensusb.org/wp-content/uploads/2023/12/375587788_643831741176123_6289590986046757949_n-150x150.jpg 150w, https://ieeensusb.org/wp-content/uploads/2023/12/375587788_643831741176123_6289590986046757949_n-300x300.jpg 300w, https://ieeensusb.org/wp-content/uploads/2023/12/375587788_643831741176123_6289590986046757949_n-600x600.jpg 600w" sizes="(max-width: 150px) 100vw, 150px">
+                      </a>
+                    </div>
+                    <div class="article-content">
+                      <h2>Basic Automation Workshop On Home Security</h2>
+                      <!-- Rest of the content -->
+                      <h6>A home security system is a collection of tangible electrical components that cooperate to safeguard a house. This home security system, used to protect against theft and break-ins, frequently consists…</h6>
+                      <a href="https://ieeensusb.org/events/workshop-on-basic-home-automation/" title="Continue Reading">Continue Reading</a>
+                    </div>
+                  </div>
+                <!-- Remaining articles with the same structure -->
+              </div>
+
+
+
+            <!-- calender starts here -->
+            <div class="event_calender">
+                <!-- Calender start -->
+                <h4 style="margin-bottom: 30px; font-weight: bold;"><span style="border-bottom: 4px solid #fecd13;">EVENT C</span>ALENDER</h4>
+                <div class="calendar">
+                <div class="header" style="padding: 20px;">
+                <div style="cursor: pointer;" class="prev-btn"><i class="fa-solid fa-chevron-left"></i></div>
+                <span class="month-year"></span>
+                <div style="cursor: pointer;" class="next-btn"><i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+                <div class="days-of-week" style="display: flex; justify-content: space-around; padding: 10px 0px; font-weight: bold;">
+                <span class="day-of-week">Sun</span>
+                <span class="day-of-week">Mon</span>
+                <span class="day-of-week">Tue</span>
+                <span class="day-of-week">Wed</span>
+                <span class="day-of-week">Thu</span>
+                <span class="day-of-week">Fri</span>
+                <span class="day-of-week">Sat</span>
+                </div>
+                <div class="days" style="padding: 15px 0px; font-weight: bold;"></div>
+                </div>
+                <div class="event-box" style="padding: 20px;">
+                    <h5>Events for <span class="selected-date"></span></h3>
+                    <ul style="list-style-type: disc; margin-top: 15px;" class="events-list"></ul>
+                </div>
+                <!-- calender end -->
             </div>
-            
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-            <div class="wave wave4"></div>
-        </section>
-        <!-- end of wAVE PART  -->
+    </div>
 
 
-
-
-
-        <!-- News card start -->
-
-        <!-- Make sure all card is under "newsCardTotal" class -->
-        <!-- "alt" class only making difference between left right image. Just add or remove the class -->
-        <!-- For "Load more" button, under "newsCardTotal", class flow will be ==> flex > content, content, content....... -->
-        <div class="newsCardTotal container my-5"> 
-
-            <div class="flex">
-                <!-- This card for left image. Absent of "alt" class -->
-                <div class="content">
-                    <div class="news-card">
-                    <div class="meta">
-                        <div
-                            class="photo"
-                            style="
-                                background-image: url(http://ece.northsouth.edu/wp-content/uploads/2018/11/183_INSB_award.jpg);
-                            "
-                        ></div>
-                        <ul class="details">
-                            <li class="author"><a href="#">John Doe</a></li>
-                            <li class="date">Aug. 24, 2015</li>
-                            <li class="tags">
-                                <ul>
-                                    <li><a href="#">IEEE</a></li>
-                                    <li><a href="#">NSU</a></li>
-                                    <li><a href="#">Success</a></li>
-                                    <li><a href="#">INSB</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="description">
-                        <h1>IEEE NSU STUDENT BRANCH GOES GLOBAL -A SONG OF GLORY</h1>
-                        <h2>Opening a door to the future</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ad eum dolorum architecto obcaecati enim dicta
-                            praesentium, quam nobis! Neque ad aliquam facilis
-                            numquam. Veritatis, sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolorum rerum ullam harum possimus, om, nobis delectus aliquid, eos sed voluptates possimus maxime dolor qpa? Velit voluptatibus expedita assumenda omnis.
-                        </p>
-                        <p class="read-more">
-                            <a href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                </div>
-
-
-                <!-- This card for right image. Present "alt" class -->
-                <div class="content">
-                    <div class="news-card  alt">
-                    <div class="meta">
-                        <div
-                            class="photo"
-                            style="
-                                background-image: url(http://ece.northsouth.edu/wp-content/uploads/2018/12/183_workshop_PCB.jpg);
-                            "
-                        ></div>
-                        <ul class="details">
-                            <li class="author"><a href="#">Fazlul Karim</a></li>
-                            <li class="date">September. 28, 2023</li>
-                            <li class="tags">
-                                <ul>
-                                    <li><a href="#">INSB</a></li>
-                                    <li><a href="#">Workshop</a></li>
-                                    <li><a href="#">PCB</a></li>
-                                    <li><a href="#">RAS</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="description">
-                        <h1>WORKSHOP ON PRINTED CIRCUIT BOARD (PCB) BY IEEE NSU RAS SBC</h1>
-                        <h2>Java is not the same as JavaScript</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ad eum dolorum architecto obcaecati enim dicta
-                            praesentium, quam nobis! Neque ad aliquam facilis
-                            numquam. Veritatis, sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolorum rerum ullam harum possimus, om, nobis delectus aliquid, eos sed voluptates possimus maxime dolor qpa? Velit voluptatibus expedita assumenda omnis.
-                        </p>
-                        <p class="read-more">
-                            <a href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                </div>
-
-
-                <!-- This card for left image. Absent of "alt" class -->
-                <div class="content">
-                    <div class="news-card ">
-                    <div class="meta">
-                        <div
-                            class="photo"
-                            style="
-                                background-image: url(http://ece.northsouth.edu/wp-content/uploads/2018/11/183_INSB_award.jpg);
-                            "
-                        ></div>
-                        <ul class="details">
-                            <li class="author"><a href="#">John Doe</a></li>
-                            <li class="date">Aug. 24, 2015</li>
-                            <li class="tags">
-                                <ul>
-                                    <li><a href="#">IEEE</a></li>
-                                    <li><a href="#">NSU</a></li>
-                                    <li><a href="#">Success</a></li>
-                                    <li><a href="#">INSB</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="description">
-                        <h1>IEEE NSU STUDENT BRANCH GOES GLOBAL -A SONG OF GLORY</h1>
-                        <h2>Opening a door to the future</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ad eum dolorum architecto obcaecati enim dicta
-                            praesentium, quam nobis! Neque ad aliquam facilis
-                            numquam. Veritatis, sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolorum rerum ullam harum possimus, om, nobis delectus aliquid, eos sed voluptates possimus maxime dolor qpa? Velit voluptatibus expedita assumenda omnis.
-                        </p>
-                        <p class="read-more">
-                            <a href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                </div>
-
-                <!-- This card for right image. Present "alt" class -->
-                <div class="content">
-                    <div class="news-card  alt">
-                    <div class="meta">
-                        <div
-                            class="photo"
-                            style="
-                                background-image: url(http://ece.northsouth.edu/wp-content/uploads/2018/12/183_workshop_PCB.jpg);
-                            "
-                        ></div>
-                        <ul class="details">
-                            <li class="author"><a href="#">Fazlul Karim</a></li>
-                            <li class="date">September. 28, 2023</li>
-                            <li class="tags">
-                                <ul>
-                                    <li><a href="#">INSB</a></li>
-                                    <li><a href="#">Workshop</a></li>
-                                    <li><a href="#">PCB</a></li>
-                                    <li><a href="#">RAS</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="description">
-                        <h1>WORKSHOP ON PRINTED CIRCUIT BOARD (PCB) BY IEEE NSU RAS SBC</h1>
-                        <h2>Java is not the same as JavaScript</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ad eum dolorum architecto obcaecati enim dicta
-                            praesentium, quam nobis! Neque ad aliquam facilis
-                            numquam. Veritatis, sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolorum rerum ullam harum possimus, om, nobis delectus aliquid, eos sed voluptates possimus maxime dolor qpa? Velit voluptatibus expedita assumenda omnis.
-                        </p>
-                        <p class="read-more">
-                            <a href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                </div>
-
-            </div>
-            </div>
-        </div>
-
-        <div class="text-center">
-            <div class="btn btn-outline-primary px-5 py-2 mb-5"  id="loadMore">Load more</div>
-        </div>
-
-
-
-
-
-
-        <!-- Footer -->
+    <!-- Footer starts here -->
         <footer class="footer-wrapper">
             <div>
                 <div>
@@ -997,9 +952,6 @@
 
     </div>
     <!-- body-wrapper -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type='text/javascript' src='js/jquery.js'></script>
     <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
     <script type='text/javascript' src='js/scripts.js'></script>
@@ -1108,38 +1060,54 @@
         });
     </script>
 
-    <!-- News load more script -->
+    <!-- event load more button -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        var contents = document.getElementsByClassName("content");
-        var loadMore = document.getElementById("loadMore");
+        const loadMore = document.querySelector('.load-more');
+        let currentItem = 3;
 
-        var startIndex = 0;
-        var itemsToShow = 2;
+        loadMore.addEventListener('click', (e) => {
+            const elementList = [...document.querySelectorAll('.event-container .box-container .gdlr-item.gdlr-blog-grid.gdlr-skin-box')];
+            for (let i = currentItem; i < currentItem + 3; i++) {
+                if (elementList[i]) {
+                    elementList[i].style.display = 'flex';
+                }
+            }
+            currentItem += 3;
 
-        function showNextItems() {
-            for (var i = startIndex; i < startIndex + itemsToShow; i++) {
-            if (contents[i]) {
-                contents[i].classList.add('d-block')
+            //hide load more button after fully loaded
+            if (currentItem >= elementList.length) {
+                loadMore.style.display = 'none';
             }
-            }
-            startIndex += itemsToShow;
-            
-            if (startIndex >= contents.length) {
-            loadMore.textContent = "No Content";
-            loadMore.classList.add("noContent");
-            loadMore.removeEventListener("click", showNextItems);
+        })
+
+
+        function searchfunction() {
+            let input, filter, table, tr, td, j;
+            input = document.getElementById("search");
+            filter = input.value.toUpperCase();
+            table = document.querySelector(".box-container");
+            tr = table.querySelector(".box");
+
+            for (j = 0; j < tr.length; j++) {
+                td = tr[j].getElementsByTagName("div");
+                message = document.getElementById("no_data");
+
+                if (td.length > 0) {
+                    if (td[2].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        tr[j].style.display = "";
+                        message.innerHTML = "";
+                    }
+                    else {
+                        tr[j].style.display = "none";
+                    }
+
+                }
+                if (td.length == 0) {
+                    message.innerHTML = "Event not found!";
+                }
             }
         }
-
-        loadMore.addEventListener("click", showNextItems);
-
-        showNextItems();
-        });
-
     </script>
-
-
     <script type='text/javascript' src='masterslider/public/assets/js/masterslider.min.js'></script>
     <script src="./js/event_script.js"></script>
 </body>
