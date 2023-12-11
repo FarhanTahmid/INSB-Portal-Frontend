@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>News - IEEE NSU SB</title>
+    <title>IEEE - IEEE NSU SB</title>
 
     <link rel="icon" href="upload/logo.gif"/>
     <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
@@ -20,12 +20,10 @@
     <link rel='stylesheet' href='css/style-custom.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/event.css' type='text/css' media='all' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/ieee.css">
+    <link rel="stylesheet" href="css/ieeebdsection.css">
 
-
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300|Lato:regular|Crete+Round:regular" rel="stylesheet"
-        property="stylesheet" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300|Lato:regular|Crete+Round:regular" rel="stylesheet" property="stylesheet" type="text/css" media="all">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -36,6 +34,7 @@
         .wavy {
             position: relative;
             width: 100%;
+            height: 55vh;
             background-color: transparent;
             background-image: linear-gradient(180deg, #02082b 0%, #519fff 96%);
             overflow: hidden;
@@ -125,6 +124,204 @@
                 background-position-x: -1000px;
             }
         }
+
+
+
+
+
+
+
+        .section-A {
+            margin: auto;
+            max-width: 1100px;
+            padding-bottom: 45px;
+        }
+
+        .section-A .container {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 30% 70%;
+        }
+
+        .section-A .container img{
+            padding-top: 20px;
+            width: 100%;
+        }
+
+        .section-A .container .inner-container {
+            padding-left: 10px;
+        }
+
+        .section-A .container .inner-container h2 {
+            color: #000000;
+            font-family: "Poppins", Sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 0px;
+        }
+
+        .section-A .container .inner-container hr {
+            border-top: 3px solid #012581;
+            margin: 0px;
+            width: 80px;
+        }
+        
+        .section-A .container .buttonWrapper {
+            float: right;
+        }
+
+        .ieeeBDBtn{
+            font-weight: 700;
+            background-color: #0a4dc9;
+            border: none;
+            padding: 12px 0px;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .ieeeBDBtn:active{
+            background-color: #4876ca;
+        }
+
+        .ieeeBDBtn:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            transition: 150ms ease-in-out;
+            scale: 1.02;
+        }
+
+        .ieeeBDBtn a{
+            color: white;
+            text-decoration: none;
+            padding: 15px 32px;
+        }
+
+        .section-B {
+            background-image: url("https://ieeensusb.org/wp-content/uploads/2021/03/contact-_img-2.jpeg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: repeat;
+            width: 100%;         
+        }
+
+        .section-B .container {
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-B .container h2 {
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+        
+        .section-B .container hr {
+            border-top: 3px solid #ffffff;
+            margin: 0px;
+            width: 130px;
+        }
+
+        .section-B .container p {
+            font-family: "Poppins";
+            color: #ffffff;
+        }
+
+        .section-B .parallax-overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        @media only screen and (max-width: 900px){
+            .section-A .container {
+                display: grid;
+                grid-template-columns: 100%;
+            }
+
+            .section-A .container img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+
+
+
+         .ieee_affinityBtn {
+        background: #002481;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid #ffffff;
+        padding: 10px 50px;
+        position: relative;
+        left: 100px;
+        z-index: 1;
+        overflow: hidden;
+        font-size: 1rem;
+        font-weight: 600;
+        }
+
+        .ieee_affinityBtn:hover {
+            color: #002481;
+        }
+
+        .ieee_affinityBtn::after {
+            content: "";
+            background: white;
+            position: absolute;
+            z-index: -1;
+            padding: 0.85em 0.75em;
+            display: block;
+        }
+        .ieee_memVolBtn {
+        background: #002481;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid #ffffff;
+        padding: 12px 40px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        font-size: .8rem;
+        font-weight: 600;
+
+        }
+
+        .ieee_memVolBtn:hover {
+            color: #002481;
+        }
+
+        .ieee_memVolBtn::after {
+            content: "";
+            background: white;
+            position: absolute;
+            z-index: -1;
+            padding: 0.85em 0.75em;
+            display: block;
+        }
+        button.slide_from_left::after {
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        right: 100%;
+        }
+        button[class^="slide"]:hover::after {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: all 0.35s;
+        }
+        @media only screen and (max-width: 900px){
+            img {
+                width: 100%;
+                margin: auto;
+            }
+        }
+        
           
     </style>
 
@@ -158,7 +355,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu-item menu-item-has-children menu-item-30"><a href="#">Societies & AG</a> 
-                                    <!-- This is new comment -->r
+                                    <!-- This is new comment -->
                                     <ul class="dl-submenu">
                                         <li class="menu-item"><a href="#">IEEE NSU RAS SBC</a></li>
                                         <li class="menu-item"><a href="#">IEEE NSU PES SBC</a></li>
@@ -270,9 +467,6 @@
 
                         </nav>
                         
-                       
-
-                        
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
@@ -286,8 +480,8 @@
         <!-- slider menu ends  -->
         <section class="wavy">
             <div class="title">
-                <h2>News</h2>
-                <p style="letter-spacing: 1px;" class="mt-2">This page represents some of the achievements of INSB</p>
+                <h2>IEEE BANGLADESH</h2>
+                <p style="letter-spacing: 1px;" class="mt-2">This Page represents IEEE BD Section</p>
             </div>
             
             <div class="wave wave1"></div>
@@ -299,181 +493,254 @@
 
 
 
+        
 
-
-        <!-- News card start -->
-
-        <!-- Make sure all card is under "newsCardTotal" class -->
-        <!-- "alt" class only making difference between left right image. Just add or remove the class -->
-        <!-- For "Load more" button, under "newsCardTotal", class flow will be ==> flex > content, content, content....... -->
-        <div class="newsCardTotal container my-5"> 
-
-            <div class="flex">
-                <!-- This card for left image. Absent of "alt" class -->
-                <div class="content">
-                    <div class="news-card">
-                    <div class="meta">
-                        <div
-                            class="photo"
-                            style="
-                                background-image: url(http://ece.northsouth.edu/wp-content/uploads/2018/11/183_INSB_award.jpg);
-                            "
-                        ></div>
-                        <ul class="details">
-                            <li class="author"><a href="#">John Doe</a></li>
-                            <li class="date">Aug. 24, 2015</li>
-                            <li class="tags">
-                                <ul>
-                                    <li><a href="#">IEEE</a></li>
-                                    <li><a href="#">NSU</a></li>
-                                    <li><a href="#">Success</a></li>
-                                    <li><a href="#">INSB</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="description">
-                        <h1>IEEE NSU STUDENT BRANCH GOES GLOBAL -A SONG OF GLORY</h1>
-                        <h2>Opening a door to the future</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ad eum dolorum architecto obcaecati enim dicta
-                            praesentium, quam nobis! Neque ad aliquam facilis
-                            numquam. Veritatis, sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolorum rerum ullam harum possimus, om, nobis delectus aliquid, eos sed voluptates possimus maxime dolor qpa? Velit voluptatibus expedita assumenda omnis.
-                        </p>
-                        <p class="read-more">
-                            <a href="#">Read More</a>
-                        </p>
-                    </div>
+            <section class="section-A">
+        <div class="container">
+            <img src="https://ieeensusb.org/wp-content/uploads/2021/03/IEEE-BDS-Logo-800x326-2-400x163-1.png" alt="">
+            <div class="inner-container">
+                <div>
+                    <h2>About</h2>
+                    <hr>
                 </div>
+                <p>
+                    Institute of Electrical and Electronics Engineers (<b>IEEE</b>) Bangladesh Section was formed in November 1993 with just 54 members. But now the Institute of Electrical and Electronics Engineers (<b>IEEE</b>) Bangladesh Section has gained a huge community with a lot of members from different countries. Recently IEEE Bangladesh Community is holding the position right after India, USA, China and Canada. Bangladesh Section is maintaining the 5th ranking among 342 sections all over 160 countries in the world
+                </p>
+                <div class="buttonWrapper">
+                    <button class="ieeeBDBtn"><a href="http://www.ieeebd.net/">IEEEBD.net</a></button>               
                 </div>
-
-
-                <!-- This card for right image. Present "alt" class -->
-                <div class="content">
-                    <div class="news-card  alt">
-                    <div class="meta">
-                        <div
-                            class="photo"
-                            style="
-                                background-image: url(http://ece.northsouth.edu/wp-content/uploads/2018/12/183_workshop_PCB.jpg);
-                            "
-                        ></div>
-                        <ul class="details">
-                            <li class="author"><a href="#">Fazlul Karim</a></li>
-                            <li class="date">September. 28, 2023</li>
-                            <li class="tags">
-                                <ul>
-                                    <li><a href="#">INSB</a></li>
-                                    <li><a href="#">Workshop</a></li>
-                                    <li><a href="#">PCB</a></li>
-                                    <li><a href="#">RAS</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="description">
-                        <h1>WORKSHOP ON PRINTED CIRCUIT BOARD (PCB) BY IEEE NSU RAS SBC</h1>
-                        <h2>Java is not the same as JavaScript</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ad eum dolorum architecto obcaecati enim dicta
-                            praesentium, quam nobis! Neque ad aliquam facilis
-                            numquam. Veritatis, sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolorum rerum ullam harum possimus, om, nobis delectus aliquid, eos sed voluptates possimus maxime dolor qpa? Velit voluptatibus expedita assumenda omnis.
-                        </p>
-                        <p class="read-more">
-                            <a href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                </div>
-
-
-                <!-- This card for left image. Absent of "alt" class -->
-                <div class="content">
-                    <div class="news-card ">
-                    <div class="meta">
-                        <div
-                            class="photo"
-                            style="
-                                background-image: url(http://ece.northsouth.edu/wp-content/uploads/2018/11/183_INSB_award.jpg);
-                            "
-                        ></div>
-                        <ul class="details">
-                            <li class="author"><a href="#">John Doe</a></li>
-                            <li class="date">Aug. 24, 2015</li>
-                            <li class="tags">
-                                <ul>
-                                    <li><a href="#">IEEE</a></li>
-                                    <li><a href="#">NSU</a></li>
-                                    <li><a href="#">Success</a></li>
-                                    <li><a href="#">INSB</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="description">
-                        <h1>IEEE NSU STUDENT BRANCH GOES GLOBAL -A SONG OF GLORY</h1>
-                        <h2>Opening a door to the future</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ad eum dolorum architecto obcaecati enim dicta
-                            praesentium, quam nobis! Neque ad aliquam facilis
-                            numquam. Veritatis, sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolorum rerum ullam harum possimus, om, nobis delectus aliquid, eos sed voluptates possimus maxime dolor qpa? Velit voluptatibus expedita assumenda omnis.
-                        </p>
-                        <p class="read-more">
-                            <a href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                </div>
-
-                <!-- This card for right image. Present "alt" class -->
-                <div class="content">
-                    <div class="news-card  alt">
-                    <div class="meta">
-                        <div
-                            class="photo"
-                            style="
-                                background-image: url(http://ece.northsouth.edu/wp-content/uploads/2018/12/183_workshop_PCB.jpg);
-                            "
-                        ></div>
-                        <ul class="details">
-                            <li class="author"><a href="#">Fazlul Karim</a></li>
-                            <li class="date">September. 28, 2023</li>
-                            <li class="tags">
-                                <ul>
-                                    <li><a href="#">INSB</a></li>
-                                    <li><a href="#">Workshop</a></li>
-                                    <li><a href="#">PCB</a></li>
-                                    <li><a href="#">RAS</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="description">
-                        <h1>WORKSHOP ON PRINTED CIRCUIT BOARD (PCB) BY IEEE NSU RAS SBC</h1>
-                        <h2>Java is not the same as JavaScript</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ad eum dolorum architecto obcaecati enim dicta
-                            praesentium, quam nobis! Neque ad aliquam facilis
-                            numquam. Veritatis, sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolorum rerum ullam harum possimus, om, nobis delectus aliquid, eos sed voluptates possimus maxime dolor qpa? Velit voluptatibus expedita assumenda omnis.
-                        </p>
-                        <p class="read-more">
-                            <a href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-                </div>
-
             </div>
+        </div>
+    </section>
+
+    <section class="section-B">
+        <div class="parallax-overlay">
+            <div class="container">
+                <div>
+                    <h2>Benefits</h2>
+                    <hr>
+                </div>
+                <p>
+                    Institute of Electrical and Electronics Engineers (<b>IEEE</b>) Bangladesh Section section is expanding at a rapid pace. It is assisting by keeping up with the fast-changing world of technology and science with the Institute of Electrical and Electronics Engineers (<b>IEEE</b>) worldwide technical societies. Institute of Electrical and Electronics Engineers (<b>IEEE</b>) books and eBooks, journals and papers, conferences and proceedings, and manifold other resources are available. IEEE BD Section is going ahead with a mission of ensuring benefits of the students properly
+                </p>
+            </div> 
+        </div>
+    </section>
+
+
+
+        <div>
+        <div class="container py-5">
+            <strong class="h6" style="font-weight: bold;"> &nbsp;&nbsp;&nbsp;&nbsp;-------SUCCESS </strong> <br />
+            <strong class="h2" style="font-weight: bold;"> &nbsp;&nbsp;Achievements</strong>
+            <br>
+            <p class="mt-4">The imaginative and hardworking founders, student members, and volunteers of the Institute of Electrical and Electronics Engineers <strong>(IEEE) </strong>Bangladesh Section are achieving more and more.There are many achievements in Bangladesh Section. Here is some popular achievements list below</p>
+
+            <div class="row m-0">
+                <div class="col-md-4 mt-5">
+                    <div class="card h-100 shadow">
+                    <img class="card-img-top" src="https://ieeensusb.org/wp-content/uploads/2021/03/sample.jpg">
+                    <div class="card-body text-center">
+                        <h5 style="font-weight: bolder;">IEEE NSU Achievements</h5>
+                        <button href="#" class="ieee_achievement_learnmoreBtn mt-4">Learn more</button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5">
+                    <div class="card h-100 shadow">
+                    <img class="card-img-top" src="https://ieeensusb.org/wp-content/uploads/2021/03/sample.jpg" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h5 style="font-weight: bold;">IEEE BUET Achievements</h5>
+                        <button href="#" class="ieee_achievement_learnmoreBtn mt-4">Learn more</button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5">
+                    <div class="card h-100 shadow">
+                    <img class="card-img-top" src="https://ieeensusb.org/wp-content/uploads/2021/03/sample.jpg" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h5 style="font-weight: bold;">IEEE AIUB Achievements</h5>
+                        <button href="#" class="ieee_achievement_learnmoreBtn mt-4">Learn more</button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5">
+                    <div class="card h-100 shadow">
+                    <img class="card-img-top" src="https://ieeensusb.org/wp-content/uploads/2021/03/sample.jpg">
+                    <div class="card-body text-center">
+                        <h5 style="font-weight: bold;">Achievements of DUET</h5>
+                        <button href="#" class="ieee_achievement_learnmoreBtn mt-4">Learn more</button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5">
+                    <div class="card h-100 shadow">
+                    <img class="card-img-top" src="https://ieeensusb.org/wp-content/uploads/2021/03/sample.jpg" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h5 style="font-weight: bold;">Achievements of Milestone</h5>
+                        <button href="#" class="ieee_achievement_learnmoreBtn mt-4">Learn more</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: #f9f9f9;">
+        <div class="container py-5">
+            <strong class="h6" style="font-weight: bold;"> &nbsp;&nbsp;&nbsp;&nbsp;------- EXPLORE</strong> <br />
+            <strong class="h2" style="font-weight: bold;"> &nbsp;&nbsp;Student Branches</strong>
+            <br>
+            <p class="mt-4"><strong>IEEE</strong> Bangladesh Student Branches are taking the unprecedented steps day by day and going ahead as a big ripple in the whole world. In Bangladesh there are 1500+ students including graduate and non-graduate students. Here is the student branch details and the list of student branches link bellow</p>
+
+            <div class="row mx-0 my-3">
+                <div class="col-md-6 text-center mt-3"><button class="slide_from_left ieee_publicationBtn">IEEE BDS</button></div>
+                <div class="col-md-6 text-center mt-3"><button class="slide_from_left ieee_publicationBtn">IEEE BDS List</button></div>
             </div>
         </div>
 
-        <div class="text-center">
-            <div class="btn btn-outline-primary px-5 py-2 mb-5"  id="loadMore">Load more</div>
+    </div>
+
+
+
+
+    <div>
+        <div class="container py-4">
+            <hr style="width:50px;margin-left:20px;border: #002481 2px solid;">
+            <strong class="h2" style="font-weight: bold;"> &nbsp;&nbsp;Affinity Groups</strong>
+                <br>
+                <p class="mt-4">Institute of Electrical and Electronics Engineers <strong>(IEEE)</strong> Bangladesh  Section is involving in many kinds of industrial sectors and developing the skills of the members in BDS. Day by day the rates of seminars, tours and conferences are increasing and the focus of these events and seminars are getting close to professionalism and industrial approaches</p>
+                <p>Affinity groups in IEEE Bangladesh Section
+                    <button class="slide_from_left ieee_affinityBtn">Visit Now</button></p>
         </div>
+    </div>
+    <div style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="row m-0 pt-5">
+                <div class="col-md-8">
+                    <hr style="width:50px;margin-left:20px;border: #002481 2px solid;">
+                    <strong class="h2" style="font-weight: bold;"> &nbsp;&nbsp;Members and volunteers</strong>
+                    <br>
+                    <p class="mt-4">Members of the Institute of Electrical and Electronics Engineers <strong>(IEEE)</strong> Bangladesh Section are very involved, and they are perfecting their initiative work and forming connections with electrical engineering sides all over the world. Prof. Celia Shahnaz , Chair of the Institute of Electrical and Electronics Engineers <strong>(IEEE)</strong> Bangladesh Section, organizes year-round productive student events and congratulates all student participants.Institute of Electrical and Electronics Engineers <strong>(IEEE)</strong> Bangladesh Section is receiving overwhelming response from Institute of Electrical and Electronics Engineers <strong>(IEEE)</strong>  members and volunteers all over the world
+                    <p>Please go through this links:</p>
+
+                    <div class="row mx-0 my-4">
+                        <div class="col-md-4 text-center mt-3">
+                            <button class="slide_from_left ieee_memVolBtn">
+                                Web Team
+                            </button>
+                        </div>
+                        <div class="col-md-4 text-center mt-3">
+                            <button class="slide_from_left ieee_memVolBtn">
+                                Vice Chair Technical
+                            </button>
+                        </div>
+                        <div class="col-md-4 text-center mt-3">
+                            <button class="slide_from_left ieee_memVolBtn">   
+                                Secretary Candidates   
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 text-center">
+                    <img class="img-fluid rounded w-70" src="https://ieeensusb.org/wp-content/uploads/2021/03/celia.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+      <div class="community_container container">
+            <div class="dash" style="margin-left: 15px;">
+                <hr class="hr-dash">
+            </div>
+            
+            <h1 style="font-weight: 900; margin-top: -5px;"> &nbsp;&nbsp;Community and society</h1>
+            
+            <p >Institute of Electrical and Electronics Engineers (<strong>IEEE</strong>)  has a huge Community with many Associations. Like- <strong>WIE</strong>(women in Engineering), <strong>IAS</strong>(Industry Application Society), <strong>PES</strong>(Power and Energy Society), <strong>YP</strong>(Young Professionals) etc.</p>
+
+            
+                    <button class="community_section_button" type="button" style="height: 50px; width: 250px;" data-hover="Visit Me" data-active="I'M ACTIVE"><span>Community and society</span></button>
+                
+                    <button class="community_section_button" type="button" style="height: 50px; width: 150px;" data-hover="Visit Me" data-active="I'M ACTIVE"><span>Other Sites</span></button>
+                
+        </div>
+        
+
+        
+
+        <div>
+            <div class="gallery_container container">
+                <div style="text-align:center">
+                    <h1 style="font-weight: 900; margin-bottom: -5px;">GaLLERY</h1>
+                    <hr class="hr-dots">
+                    <hr class="hr-dash">
+                    <br/>
+                </div>
+                
+                <!-- The three columns -->
+                <div class="gallery_row">
+                    <div class="gallery_column">
+                        <img src="https://ieeensusb.org/wp-content/uploads/2021/03/group.jpg" alt="img-1">
+                    </div>
+                    <div class="gallery_column">
+                        <img src="https://ieeensusb.org/wp-content/uploads/2021/03/group-2.jpg" alt="img-2" >
+                    </div>
+                    <div class="gallery_column">
+                        <img src="https://ieeensusb.org/wp-content/uploads/2021/03/group-3.jpg" alt="img-3">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            
+            
+
+        
+
+        <div>
+            <br> <br>
+            <div class="contact_container container">
+    
+                <img  class="contact_image" src="https://ieeensusb.org/wp-content/uploads/2021/03/contact-1536x960.jpg" alt="">
+
+                <div class="contact_content">
+
+                    <div class="dash" style="margin-left: 20px;">
+                        <hr class="hr-dash">
+                    </div>
+
+                    <h1 style="font-weight: 900; margin-top: -5px;"> &nbsp;&nbsp;Contact Bangladesh Section</h1>
+
+
+                    <button class="contact_button slide_right" type="button"><span>IEEE Bangladesh Section<Section></Section></span></button>
+                    
+                    
+                    <button class="contact_button slide_right" type="button"><span>IEEE Headquarter contact center</span></button>
+                    
+                    
+                    <br/>
+                    <p><strong class="">Chair:</strong>   Prof. Dr. Celia Shahnaz</p>
+                    <p><strong class="">Email:</strong>   celia.shahnaz@ieee.org |  celia.shahnaz@gmail.com</p>
+                    <p><strong class="">Secretary:</strong>   Raihan Razeen</p>
+                    <p><strong class="">Email:</strong>   raihan.razeen@gmail.comMs. Salma [Office Secretary]</p>
+                    <p>Ms. Salma [Office Secretary]:  +88- 01992-30 06 79</p>
+                    
+
+
+                </div>
+            </div>
+        </div>
+        
+
+
 
 
 
@@ -1108,38 +1375,54 @@
         });
     </script>
 
-    <!-- News load more script -->
+    <!-- event load more button -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        var contents = document.getElementsByClassName("content");
-        var loadMore = document.getElementById("loadMore");
+        const loadMore = document.querySelector('.load-more');
+        let currentItem = 3;
 
-        var startIndex = 0;
-        var itemsToShow = 2;
+        loadMore.addEventListener('click', (e) => {
+            const elementList = [...document.querySelectorAll('.event-container .box-container .gdlr-item.gdlr-blog-grid.gdlr-skin-box')];
+            for (let i = currentItem; i < currentItem + 3; i++) {
+                if (elementList[i]) {
+                    elementList[i].style.display = 'flex';
+                }
+            }
+            currentItem += 3;
 
-        function showNextItems() {
-            for (var i = startIndex; i < startIndex + itemsToShow; i++) {
-            if (contents[i]) {
-                contents[i].classList.add('d-block')
+            //hide load more button after fully loaded
+            if (currentItem >= elementList.length) {
+                loadMore.style.display = 'none';
             }
-            }
-            startIndex += itemsToShow;
-            
-            if (startIndex >= contents.length) {
-            loadMore.textContent = "No Content";
-            loadMore.classList.add("noContent");
-            loadMore.removeEventListener("click", showNextItems);
+        })
+
+
+        function searchfunction() {
+            let input, filter, table, tr, td, j;
+            input = document.getElementById("search");
+            filter = input.value.toUpperCase();
+            table = document.querySelector(".box-container");
+            tr = table.querySelector(".box");
+
+            for (j = 0; j < tr.length; j++) {
+                td = tr[j].getElementsByTagName("div");
+                message = document.getElementById("no_data");
+
+                if (td.length > 0) {
+                    if (td[2].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        tr[j].style.display = "";
+                        message.innerHTML = "";
+                    }
+                    else {
+                        tr[j].style.display = "none";
+                    }
+
+                }
+                if (td.length == 0) {
+                    message.innerHTML = "Event not found!";
+                }
             }
         }
-
-        loadMore.addEventListener("click", showNextItems);
-
-        showNextItems();
-        });
-
     </script>
-
-
     <script type='text/javascript' src='masterslider/public/assets/js/masterslider.min.js'></script>
     <script src="./js/event_script.js"></script>
 </body>
