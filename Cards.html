@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive cards & Sliders</title>
+    <style>
+        
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #EFEFEF;
+    }
+    
+
+    .slide_content{
+        margin: 0 40px;
+
+    }
+    .image_content,
+    .card_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 14px;
+    }
+    .image_content{
+        position: relative;
+        row-gap: 5px;
+        padding: 25px;
+    }
+    .overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #4070f4;
+        left: 0;
+        top: 0;
+        border-radius: 25px 25px 0 25px;
+    }
+    .overlay::before,
+    .overlay::after{
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-color: #4070f4;
+        right: 0;
+        bottom: -40px;
+        height: 40px;
+       
+    }
+    .overlay::after{
+        border-radius: 0 25px 0 0;
+        background-color: #ffff;
+
+    }
+    
+
+    .card{
+        width: 320px;
+        border-radius: 25px;
+        background: #FFFFFF;
+    }
+
+    .card_image{
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        padding: 3px;
+
+    }
+
+    .card_image .card_img{
+        /* position: absolute;
+        top: 0;
+        left: 0; */
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #ECA220;
+        /* box-shadow: #0000; */
+        /* object-position: center;
+        transition: all 0.5s ease-in-out; */
+    }
+
+    .name{
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+    }
+    .description{
+        font-size: 14px;
+        color: #707070;
+        text-align: center;
+
+    }
+
+    .button{
+        border: none;
+        font-size: 16px;
+        color: #FFFFFF;
+        padding: 8px 16px;
+        background-color: #ECA220;
+        border-radius: 6px;
+        margin: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+    }
+    .button:hover{
+    background: #242A4E;
+    } 
+
+
+
+    </style>
+</head>
+<body>
+<div class="slide_container">
+   <div class="slide_content">
+     <div class="card_wrapper">
+       <div class="card">
+         <div class="image_content">
+ <span class="overlay"></span>
+
+       <div class="card_image">
+ <img src="images/achivement-2.jpg" alt="" class="card_img">
+       </div>
+                    </div>
+
+                    <div class="card_content">
+                        <h2 class="name">Shakill!</h2>
+                        <p class="description">Lorem ipsum dolor sit amet nesciunt eum, nulla officia.</p>
+
+                        <button class="button">View More...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel cards</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Custom Styles -->
+  <style>
+    body{
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background: #EFEFEF;
+    }
+    .img_wrapper {
+      position: relative;
+      max-width: 150px;
+      height: 150px;
+      display: flex;
+      padding: 3px;
+      justify-content: center;
+    }
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    /* Media Query for Small Screens */
+    @media screen and (min-width:576px) {
+      .carousel-item {
+        flex: 100%;
+        max-width: 100%;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Carousel Card Styles */
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin: 0 24em 0 24em;
+        border-radius: 25px;
+        background: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .carousel-inner {
+        display: flex;
+        padding: 10em;
+        align-items: center;
+        gap: 10px;
+      }
+
+      /* Button Styles */
+      .btn {
+        border: none;
+        font-size: 16px;
+        color: #FFFFFF;
+        padding: 8px 16px;
+        background-color: #ECA220;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 20px;
+      }
+
+      .btn:hover {
+        background: #242A4E;
+      }
+
+      /* Cards Container Styles */
+      .cards{
+        position: relative;
+        margin: 20px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px 14px;
+        border-radius: 25px;
+        background: #FFFFFF;
+      }
+
+      /* Card Image Styles */
+      .cards img{
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      /* Button Container Styles */
+      .btn-container {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Carousel Section -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Carousel Item 1 -->
+      <div class="carousel-item active">
+        <div class="card">
+          <div class="img_wrapper">
+            <img src="images/achivement-2.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Item 2 -->
+      <div class="carousel-item">
+        <div class="card">
+          <div class="img_wrapper">
+            <img src="images/branches.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Item 3 -->
+      <div class="carousel-item">
+        <div class="card">
+          <div class="img_wrapper">
+            <img src="images/contact.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card 3</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Item 4 -->
+      <div class="carousel-item">
+        <div class="card">
+          <div class="img_wrapper">
+            <img src="images/achivement-2.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card 4</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Item 5 -->
+      <div class="carousel-item">
+        <div class="card">
+          <div class="img_wrapper">
+            <img src="images/ieee.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card 5</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel Control Buttons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+
+  <!-- Row Card Containers -->
+  <div class="container">
+    <!-- First Row -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="cards">
+          <img src="https://via.placeholder.com/150" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="btn-container">
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="cards">
+          <img src="https://via.placeholder.com/150" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="btn-container">
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="cards">
+          <img src="https://via.placeholder.com/150" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Card 3</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="btn-container">
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Second Row -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="cards">
+          <img src="https://via.placeholder.com/150" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="btn-container">
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="cards">
+          <img src="https://via.placeholder.com/150" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="btn-container">
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="cards">
+          <img src="https://via.placeholder.com/150" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Card 3</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="btn-container">
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
